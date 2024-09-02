@@ -9,8 +9,11 @@ charval = string.punctuation + string.ascii_letters + string.digits
 password = "".join([random.choice(charval) for i in range(pass_len)])
 
 print(password)
-# password = ""
-# for i in range(pass_len):
-#     password += random.choice(charval)
 
-# print(password)
+# we can use below method also
+"""
+password = ""
+for i in range(pass_len):
+password += random.choice(charval)
+print(password)
+"""
